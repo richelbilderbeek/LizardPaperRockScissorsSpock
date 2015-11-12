@@ -43,7 +43,7 @@ ribi::About ribi::lprss::MenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "LizardPaperRockScissorsSpock",
     "lizard-paper-rock-scissors-spock simulation",
-    "the 11th of May 2015",
+    "the 12th of November 2015",
     "2015-2015",
     "http://www.richelbilderbeek.nl/ToolLizardPaperRockScissorsSpock.htm",
     GetVersion(),
@@ -54,16 +54,9 @@ ribi::About ribi::lprss::MenuDialog::GetAbout() const noexcept
   return a;
 }
 
-boost::shared_ptr<const ribi::Program> ribi::lprss::MenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p(new ProgramLizardPaperRockScissorsSpock);
-  assert(p);
-  return p;
-}
-
 std::string ribi::lprss::MenuDialog::GetVersion() const noexcept
 {
-  return "1.1";
+  return "1.2";
 }
 
 std::vector<std::string> ribi::lprss::MenuDialog::GetVersionHistory() const noexcept
@@ -72,6 +65,7 @@ std::vector<std::string> ribi::lprss::MenuDialog::GetVersionHistory() const noex
     "2015-05-10: Version 0.1: initial standalone version",
     "2015-05-11: Version 1.0: conformized version",
     "2015-05-24: Version 1.1: added to ProjectRichelBilderbeek, moved to namespace ribi::lprss"
+    "2015-11-12: Version 1.2: moved to own GitHub"
   };
 }
 
