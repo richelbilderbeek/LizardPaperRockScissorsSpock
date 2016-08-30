@@ -5,9 +5,9 @@ include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/GeneralConsole.pri)
 include(../RibiLibraries/GeneralDesktop.pri)
 
-include(../RibiClasses/CppLizardPaperRockScissorsSpock/CppLizardPaperRockScissorsSpock.pri)
-include(../RibiClasses/CppLizardPaperRockScissorsSpockSimulation/CppLizardPaperRockScissorsSpockSimulation.pri)
-include(../RibiClasses/CppQtLizardPaperRockScissorsSpockSimulation/CppQtLizardPaperRockScissorsSpockSimulation.pri)
+include(CppLizardPaperRockScissorsSpock.pri)
+include(CppLizardPaperRockScissorsSpockSimulation.pri)
+include(CppQtLizardPaperRockScissorsSpockSimulation.pri)
 
 include(LizardPaperRockScissorsSpockDesktop.pri)
 
