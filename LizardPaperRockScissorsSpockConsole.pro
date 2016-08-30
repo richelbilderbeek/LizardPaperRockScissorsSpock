@@ -10,3 +10,10 @@ include(../RibiClasses/CppLizardPaperRockScissorsSpockSimulation/CppLizardPaperR
 include(LizardPaperRockScissorsSpockConsole.pri)
 
 SOURCES += main.cpp
+
+# Thanks to Qt
+QMAKE_CXXFLAGS += -Wno-unused-variable
+
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov

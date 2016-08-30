@@ -12,3 +12,10 @@ include(../RibiClasses/CppQtLizardPaperRockScissorsSpockSimulation/CppQtLizardPa
 include(LizardPaperRockScissorsSpockDesktop.pri)
 
 SOURCES += qtmain.cpp
+
+# Thanks to Qt
+QMAKE_CXXFLAGS += -Wno-unused-variable
+
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
