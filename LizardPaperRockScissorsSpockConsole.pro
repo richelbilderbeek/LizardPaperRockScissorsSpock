@@ -4,8 +4,8 @@ include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)
 include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/GeneralConsole.pri)
 
-include(../RibiClasses/CppLizardPaperRockScissorsSpock/CppLizardPaperRockScissorsSpock.pri)
-include(../RibiClasses/CppLizardPaperRockScissorsSpockSimulation/CppLizardPaperRockScissorsSpockSimulation.pri)
+include(CppLizardPaperRockScissorsSpock.pri)
+include(CppLizardPaperRockScissorsSpockSimulation.pri)
 
 include(LizardPaperRockScissorsSpockConsole.pri)
 
