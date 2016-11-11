@@ -27,8 +27,10 @@ before_script:
   - ./download_other_githubs.sh
 
 script: 
-  - ./build_console.sh
-  - ./build_desktop.sh
+  - qmake LizardPaperRockScissorsSpockConsole.pro
+  - make
+  - qmake LizardPaperRockScissorsSpockDesktop.pro
+  - make
   - ./LizardPaperRockScissorsSpockConsole --about
   - ./get_code_cov.sh
   - codecov
