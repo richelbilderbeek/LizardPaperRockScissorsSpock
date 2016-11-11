@@ -2,12 +2,17 @@
 include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
 
 include(../RibiLibraries/Boost.pri)
-include(../RibiLibraries/GeneralConsole.pri)
-include(../RibiLibraries/GeneralDesktop.pri)
 
-include(CppLizardPaperRockScissorsSpock.pri)
-include(CppLizardPaperRockScissorsSpockSimulation.pri)
-include(CppQtLizardPaperRockScissorsSpockSimulation.pri)
+include(../RibiClasses/CppAbout/CppAbout.pri)
+include(../RibiClasses/CppFileIo/CppFileIo.pri)
+include(../RibiClasses/CppHelp/CppHelp.pri)
+include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
+include(../RibiClasses/CppQtAboutDialog/CppQtAboutDialog.pri)
+include(../RibiClasses/CppQtHideAndShowDialog/CppQtHideAndShowDialog.pri)
+
+include(LizardPaperRockScissorsSpock.pri)
+include(LizardPaperRockScissorsSpockSimulation.pri)
+include(QtLizardPaperRockScissorsSpockSimulation.pri)
 
 include(LizardPaperRockScissorsSpockDesktop.pri)
 

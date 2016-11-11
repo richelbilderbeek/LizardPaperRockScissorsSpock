@@ -2,13 +2,10 @@ INCLUDEPATH += \
     ../LizardPaperRockScissorsSpock
 
 SOURCES += \
-    ../LizardPaperRockScissorsSpock/lizardpaperrockscissorsspockmenudialog.cpp
+    $$PWD/lizardpaperrockscissorsspockmenudialog.cpp
 
 HEADERS += \
-    ../LizardPaperRockScissorsSpock/lizardpaperrockscissorsspockmenudialog.h
+    $$PWD/lizardpaperrockscissorsspockmenudialog.h
 
 RESOURCES += \
-    ../LizardPaperRockScissorsSpock/LizardPaperRockScissorsSpock.qrc
-
-OTHER_FILES += \
-    ../LizardPaperRockScissorsSpock/Licence.txt
+    $$PWD/LizardPaperRockScissorsSpock.qrc

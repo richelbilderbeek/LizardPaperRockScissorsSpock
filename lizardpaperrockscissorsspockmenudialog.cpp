@@ -14,15 +14,12 @@
 
 #include "lizardpaperrockscissorsspocksimulation.h"
 #include "fileio.h"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #pragma GCC diagnostic pop
 
 ribi::lprss::MenuDialog::MenuDialog()
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
 }
 
 int ribi::lprss::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
@@ -48,8 +45,6 @@ ribi::About ribi::lprss::MenuDialog::GetAbout() const noexcept
     GetVersion(),
     GetVersionHistory()
   );
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
-  a.AddLibrary("Trace version: " + Trace::GetVersion());
   return a;
 }
 
@@ -80,19 +75,3 @@ ribi::Help ribi::lprss::MenuDialog::GetHelp() const noexcept
     }
   );
 }
-
-#ifndef NDEBUG
-void ribi::lprss::MenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    fileio::FileIo();
-    TestLizardPaperRockScissorsSpock();
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

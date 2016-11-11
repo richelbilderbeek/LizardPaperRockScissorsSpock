@@ -1,13 +1,13 @@
-include(../LizardPaperRockScissorsSpock/LizardPaperRockScissorsSpockConsole.pri)
+include(LizardPaperRockScissorsSpockConsole.pri)
 
 SOURCES += \
-    ../LizardPaperRockScissorsSpock/qtlizardpaperrockscissorsspockmenudialog.cpp \
-    ../LizardPaperRockScissorsSpock/qtlizardpaperrockscissorsspockmaindialog.cpp
+    $$PWD/qtlizardpaperrockscissorsspockmenudialog.cpp \
+    $$PWD/qtlizardpaperrockscissorsspockmaindialog.cpp
 
 HEADERS += \
-    ../LizardPaperRockScissorsSpock/qtlizardpaperrockscissorsspockmenudialog.h \
-    ../LizardPaperRockScissorsSpock/qtlizardpaperrockscissorsspockmaindialog.h
+    $$PWD/qtlizardpaperrockscissorsspockmenudialog.h \
+    $$PWD/qtlizardpaperrockscissorsspockmaindialog.h
 
 FORMS += \
-    ../LizardPaperRockScissorsSpock/qtlizardpaperrockscissorsspockmenudialog.ui \
-    ../LizardPaperRockScissorsSpock/qtlizardpaperrockscissorsspockmaindialog.ui
+    $$PWD/qtlizardpaperrockscissorsspockmenudialog.ui \
+    $$PWD/qtlizardpaperrockscissorsspockmaindialog.ui

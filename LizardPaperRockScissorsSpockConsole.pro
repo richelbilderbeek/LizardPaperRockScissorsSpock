@@ -2,11 +2,12 @@
 include(../RibiLibraries/ConsoleApplicationNoWeffcpp.pri)
 
 include(../RibiLibraries/Boost.pri)
-include(../RibiLibraries/GeneralConsole.pri)
-
-include(CppLizardPaperRockScissorsSpock.pri)
-include(CppLizardPaperRockScissorsSpockSimulation.pri)
-
+include(../RibiClasses/CppAbout/CppAbout.pri)
+include(../RibiClasses/CppFileIo/CppFileIo.pri)
+include(../RibiClasses/CppHelp/CppHelp.pri)
+include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
+include(LizardPaperRockScissorsSpock.pri)
+include(LizardPaperRockScissorsSpockSimulation.pri)
 include(LizardPaperRockScissorsSpockConsole.pri)
 
 SOURCES += main.cpp

@@ -9,8 +9,6 @@
 #include "lizardpaperrockscissorsspockmenudialog.h"
 #include "qtlizardpaperrockscissorsspockmaindialog.h"
 #include "qtlizardpaperrockscissorsspockwidget.h"
-#include "trace.h"
-#include "testtimer.h"
 #include "ui_qtlizardpaperrockscissorsspockmenudialog.h"
 #pragma GCC diagnostic pop
 
@@ -54,19 +52,3 @@ void ribi::QtLizardPaperRockScissorsSpockMenuDialog::on_button_quit_clicked()
 {
   this->close();
 }
-
-#ifndef NDEBUG
-void ribi::QtLizardPaperRockScissorsSpockMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    QtLizardPaperRockScissorsSpockWidget();
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-  QtLizardPaperRockScissorsSpockMenuDialog();
-}
-#endif

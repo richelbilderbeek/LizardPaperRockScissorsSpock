@@ -1,4 +1,5 @@
-INCLUDEPATH += $$PWD
+INCLUDEPATH += \
+    ../LizardPaperRockScissorsSpock
 
 SOURCES += \
     $$PWD/lizardpaperrockscissorsspocksimulation.cpp
